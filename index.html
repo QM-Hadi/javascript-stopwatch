@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .main{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .sub-main {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            font-size: 40px;
+            height: 200px;
+            width: 200px;
+            border: 7px solid black;
+            border-radius: 100%;
+            background-image: url('data:image/jpeg;base64,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');
+        }
+
+        .stop-btn {
+            height: 40px;
+            width: 90px;
+            background-color: red;
+            color: #fff;
+            border: 2px solid red;
+            border-radius: 30px;
+            cursor: pointer;
+        }
+
+        
+    </style>
+</head>
+
+<body style="background-color: blanchedalmond;">
+    <h1 style="text-align: center; color: blue;">DIGITAL WATCH</h1>
+    <div class="main">
+        <div class="sub-main">
+            <span style="margin: 30px 0px 0px 0px;" id="hours"> -</span>
+            <span style="margin: 30px 0px 0px 0px;" id="mins"> -</span>
+            <span style="margin: 30px 0px 0px 0px;" id="sec"> -</span>
+        </div>
+    </div>
+    <center> <button id="" onclick="lastbtn()" style="margin: 20px 0px 0px 0px;" class="stop-btn"> Stop Watch</button>
+    </center>
+    <script src="app.js"></script>
+</body>
+
+</html>
